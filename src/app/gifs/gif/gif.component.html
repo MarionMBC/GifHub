@@ -1,0 +1,26 @@
+<!-- Parte de resultado -->
+<div class="col">
+    <div class="row">
+        <div *ngFor="let gif of results" class="col-12 col-sm-6 col-md-3 mb-2">
+            <div class="card p-2  animate__animated animate__fadeIn">
+                <div class="d-flex card-image justify-content-center">
+                    <img class="img-fluid card-img mb-2" src="{{gif.images.fixed_width_small.url}}" style="height: 12rem" alt="">
+                </div>
+                <div class="card-title text-center fw-bold">
+                    {{gif.title}}
+                </div>
+                <!-- <div class="card-body text-center d-flex align-items-center">
+                    <div *ngIf="gif.user" class="d-flex">
+                        <img class="profile-pic" src="{{gif.user.avatar_url}}" alt="">
+                        <span class="fw-regular ms-2">{{gif}}</span>
+                    </div>
+                    <div *ngIf="!gif.user" class="d-flex">
+                        <img class="profile-pic" src="{{user_info.profile}}" alt="">
+                        <span class="fw-regular ms-2">{{user_info.user_name}}</span>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+</div>
